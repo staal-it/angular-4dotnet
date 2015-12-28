@@ -4,8 +4,23 @@ angular.module('angularDemo', ['ngRoute'])
 	$routeProvider.when('/', {
 		templateUrl: 'app/main/menu.html'
 	})
-  .when('/controllerExamples', {
-    templateUrl: 'app/controllerExamples/controllerExamples.html'
+  .when('/controller', {
+    templateUrl: 'app/controller/controller.html'
+  })
+  .when('/directive', {
+    templateUrl: 'app/directive/directive.html'
+  })
+  .when('/factory', {
+    templateUrl: 'app/factory/factory.html'
+  })
+  .when('/watch', {
+    templateUrl: 'app/watch/watch.html'
+  })
+  .when('/service', {
+    templateUrl: 'app/service/service.html'
+  })
+  .when('/promise', {
+    templateUrl: 'app/promise/promise.html'
   })
   .otherwise({
     redirectTo: '/'

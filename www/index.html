@@ -1,8 +1,11 @@
-<html ng-app>
+<html ng-app="angularDemo">
 <head>
   <script src="bower_components/angular/angular.js" ></script>
+  <script src="app/app.js" ></script>
 </head>
 <body>
-  {{ 'hello ' + 'world!' }}
+  <div ng-controller="MainController">
+    {{ stuff }}
+  </div>
 </body>
 </html>
